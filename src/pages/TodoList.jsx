@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import TodoItem from "../components/TodoItem";
 
 const TodoList = () => {
@@ -25,6 +25,7 @@ const TodoList = () => {
         </div>
         <div className="col-md-5"></div>
       </div>
+      <Outlet/>
     </div>
   );
 };
